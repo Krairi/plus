@@ -1,0 +1,2 @@
+export const ROUTES = { landing: "/", profiles: "/profiles", dashboard: "/dashboard", status: "/status", capacity: "/capacity", inventory: "/inventory", shopping: "/shopping", meals: "/meals", tasks: "/tasks", tools: "/tools", recipes: "/recipes", taskLibrary: "/task-library", admin: "/admin", adminCatalog: "/admin/catalog", adminRecipes: "/admin/recipes", adminTaskLibrary: "/admin/task-library", adminAccess: "/admin/access", notFound: "*" } as const;
+export const PROTECTED_ROUTES = new Set<string>(Object.values(ROUTES).filter((r) => r !== "/" && r !== "*"));
